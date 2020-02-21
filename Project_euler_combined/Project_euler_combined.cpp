@@ -4,9 +4,9 @@
 #include "pch.h"
 #include <cstdio>
 #include <iostream>
-#include <math.h>
+#include <math.h> 
 #include "euler.h"
-using namespace std;
+using namespace std; dupa 1
 //Deklaracje funkcji
 void Choose_Solution(int Solution_number);
 void Description(int Description_number);
