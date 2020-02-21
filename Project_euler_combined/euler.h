@@ -4,7 +4,7 @@
 Functions which calculate solutions for dedicated problems
 #########################################################*/
 
-void Choose_Solution(int Solution_number);
+int Choose_Solution(int Solution_number);
 
 
 /*#########################################################

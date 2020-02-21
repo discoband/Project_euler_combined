@@ -6,10 +6,9 @@
 #include <iostream>
 #include <math.h> 
 #include "euler.h"
-using namespace std; dupa 1
+#include <map>
+using namespace std; 
 //Deklaracje funkcji
-void Choose_Solution(int Solution_number);
-void Description(int Description_number);
 
 //Definicja klasy
 class Solution
@@ -17,8 +16,8 @@ class Solution
 public:
     Solution();
     ~Solution();
-    int no_Problem, no_Description;
-    void No_Solution(int no_Problem);
+    int no_Problem, no_Return;
+    int No_Solution(int no_Problem);
 
 
 };
@@ -26,7 +25,7 @@ public:
 Solution::Solution()
 {
     no_Problem = 0;
-    no_Description = 0;
+    no_Return = 0;
 }
 //Destruktor 
 Solution::~Solution()
@@ -34,21 +33,21 @@ Solution::~Solution()
 } 
 // No_Solution wywołanie odpowiedniej funkcji
 void Solution::No_Solution(int no_Problem) {
-     Choose_Solution(no_Problem);
-    
+     no_Return = Choose_Solution(no_Problem);
+     
 };
 
 int main()
 {
+    map<int, int> MyMap;
     int problem;
     cout << "Wybierz problem od 1-4\n";
     cin >> problem;
     
         Solution Solution_1;
-        Solution_1.no_Description = problem;
-        Solution_1.no_Description = problem;
-        Solution_1.No_Solution(problem);
-        
+        Solution_1.no_Problem = problem;
+        int a = Solution_1.No_Solution(problem);
+        MyMap.insert(make_pair(Solution_1.no_Problem, Solution_1.no_Return));
    
    
 }
