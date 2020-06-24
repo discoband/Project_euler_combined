@@ -3,7 +3,7 @@
 #include "pch.h"
 using namespace std;
 
-int Choose_Solution(int Solution_number)
+void Choose_Solution(int Solution_number)
 {
     int sum = 0;
     int i = 999;
@@ -12,10 +12,9 @@ int Choose_Solution(int Solution_number)
         if (i % 5 == 0 || i % 3 == 0) {
             sum = sum + i;
         }
-        
+
     }
     cout << "The sum of all the multiples of 3 or 5 below 1000 is " << sum << "\n";
-    return sum;
 }
 void Description(int Description_number)
 {
