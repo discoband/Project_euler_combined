@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dtredota/training/Project_euler_combined-master/Project_euler_combined/functions.h
+iostream
+-
+list
+-
+
+/home/dtredota/training/Project_euler_combined-master/Project_euler_combined/main.cpp
+pch.h
+/home/dtredota/training/Project_euler_combined-master/Project_euler_combined/pch.h
+cstdio
+-
+iostream
+-
+math.h
+-
+functions.h
+/home/dtredota/training/Project_euler_combined-master/Project_euler_combined/functions.h
+map
+-
+string
+-
+iomanip
+-
+
+/home/dtredota/training/Project_euler_combined-master/Project_euler_combined/pch.h
+iostream
+-
+

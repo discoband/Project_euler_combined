@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/dtredota/training/Project_euler_combined-master/Project_euler_combined/build",
+  "command": "/bin/g++-9    -g   -o CMakeFiles/functions.dir/functions.cpp.o -c /home/dtredota/training/Project_euler_combined-master/Project_euler_combined/functions.cpp",
+  "file": "/home/dtredota/training/Project_euler_combined-master/Project_euler_combined/functions.cpp"
+},
+{
+  "directory": "/home/dtredota/training/Project_euler_combined-master/Project_euler_combined/build",
+  "command": "/bin/g++-9    -g   -o CMakeFiles/euler.dir/main.cpp.o -c /home/dtredota/training/Project_euler_combined-master/Project_euler_combined/main.cpp",
+  "file": "/home/dtredota/training/Project_euler_combined-master/Project_euler_combined/main.cpp"
+}
+]

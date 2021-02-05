@@ -18,14 +18,22 @@ public:
     int calculate_result(int idx);
     string add_description(int idx);
 };
-class Description
-{
-private:
-    list<string> descr_list;
-public:
-    void create_list(); /*--> do konstruktora*/
-    string give_description(int id);
-};
+
+
+
+
+Description::Description():descr_list.push_back("description_1"), descr_list.push_back("description_2")
+{}
+
+string Description::give_description(){
+    std::list<int>::iterator it=descr_list.begin()
+    return *it;
+}
+
+
+
+
+
 
 ///////
 class Solution {
@@ -86,11 +94,11 @@ int divided_by_five_and_two(int i) {
 }
 float rectangle_surface_area(float a, float b) {
     float surface_area=a*b;
-    cout <<fixed<<setprecision(2)<< "Pole prostok¹ta wynosi "<< surface_area << endl;
+    cout <<fixed<<setprecision(2)<< "Pole prostokï¿½ta wynosi "<< surface_area << endl;
         return surface_area;
     }
 void show_pi() {
-    cout << "warotœæ PI: ";
+    cout << "warotï¿½ï¿½ PI: ";
     cout << fixed << setprecision(5) << M_PI << endl;
 }
 double sqrt_pi() {

@@ -17,20 +17,10 @@ int main()
 {
 	cout << "Welcome to Project Euler application." << endl << "Please choose problem from range 1-5" << endl;
 	cin >> range;
-	switch (range)
-	{
-	case 1:
-		cout << "Let me do math" << endl;
+	Description description;
+	cout<< description.give_description();
 	
-	default:
 
-		break;
-	}
-	
-	double x;
-	x = sqrt_pi();
-	show_pi();
-	getchar();
 	return 0;
 		
 		
