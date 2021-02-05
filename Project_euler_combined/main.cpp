@@ -5,52 +5,37 @@
 #include <cstdio>
 #include <iostream>
 #include <math.h> 
-#include "euler.h"
+#include "functions.h"
 #include <map>
+#include <string>
+#include <iomanip>
 using namespace std;
-//Deklaracje funkcji
-
-//Definicja klasy
-class Solution
-{
-public:
-    Solution();
-    ~Solution();
-    int no_Problem, no_Return;
-    void No_Solution(int no_Problem);
 
 
-};
-//Konstruktor
-Solution::Solution()
-{
-    no_Problem = 0;
-    no_Return = 0;
-}
-//Destruktor 
-Solution::~Solution()
-{
-}
-// No_Solution wywołanie odpowiedniej funkcji
-void Solution::No_Solution(int no_Problem) {
-    no_Return = Choose_Solution(no_Problem);
-
-};
-
+int range = 0;
 int main()
 {
-    map<int, int> MyMap;
-    int problem;
-    cout << "Wybierz problem od 1-4\n";
-    cin >> problem;
+	cout << "Welcome to Project Euler application." << endl << "Please choose problem from range 1-5" << endl;
+	cin >> range;
+	switch (range)
+	{
+	case 1:
+		cout << "Let me do math" << endl;
+	
+	default:
 
-    Solution Solution_1;
-    Solution_1.no_Problem = problem;
-    Solution_1.No_Solution(problem);
-    MyMap.insert(make_pair(Solution_1.no_Problem, Solution_1.no_Return));
-
-
+		break;
+	}
+	
+	double x;
+	x = sqrt_pi();
+	show_pi();
+	getchar();
+	return 0;
+		
+		
 }
+
 
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
